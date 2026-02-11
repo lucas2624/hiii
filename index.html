@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine Flow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff0f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+    button {
+      margin: 8px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      background: #ff4d6d;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background: #e63e5c;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box" id="app">
+  <p><strong>Aslamoalaikum</strong></p>
+  <button onclick="step1()">walaikumsalam</button>
+  <button onclick="step1()">hn</button>
+</div>
+
+<script>
+  const app = document.getElementById("app");
+
+  function step1() {
+    app.innerHTML = `
+      <p>ap kaisi ho</p>
+      <button onclick="step2()">theek hu</button>
+      <button onclick="step2()">good</button>
+    `;
+  }
+
+  function step2() {
+    app.innerHTML = `
+      <p>socha ap udaas ho gi</p>
+      <button onclick="step3()">yes</button>
+      <button onclick="step3()">no</button>
+    `;
+  }
+
+  function step3() {
+    app.innerHTML = `
+      <p><strong>lessssgo</strong></p>
+      <button onclick="step4()">continue</button>
+    `;
+  }
+
+  function step4() {
+    app.innerHTML = `
+      <p>will you be my valentine</p>
+      <button onclick="step5()">yes</button>
+      <button onclick="step5()">no</button>
+    `;
+  }
+
+  function step5() {
+    app.innerHTML = `
+      <p>allah ap k naseeb bht ache kren</p>
+      <button onclick="step6()">ameen</button>
+    `;
+  }
+
+  function step6() {
+    app.innerHTML = `
+      <p>finalz k baad mile</p>
+      <button onclick="step7()">yes</button>
+      <button onclick="step7()">no</button>
+    `;
+  }
+
+  function step7() {
+    app.innerHTML = `
+      <p>kiu k ap ne yes pr click kia ro ab to ap ko hi ana pre ga meri uni</p>
+      <button onclick="step8()">ok</button>
+      <button onclick="step8()">ye kya</button>
+    `;
+  }
+
+  function step8() {
+    app.innerHTML = `
+      <p>tarasti hn nigahe , takti hn rrahe , chaiye pna lu teri</p>
+    `;
+  }
+</script>
+
+</body>
+</html>
